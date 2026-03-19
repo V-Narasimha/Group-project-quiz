@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="../css/result.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="result-container">
+    <h1 class="title">Quiz <span>Result</span></h1>
+
+    <div class="result-box">
+        <h2>Quiz Completed!</h2>
+
+        <p>Your Score: <span id="score">0</span> / 10</p>
+
+        <p id="message"></p>
+
+        <button onclick="retryQuiz()">Retry Quiz</button>
+        <button onclick="viewAnswers()">View Answers</button>
+    </div>
+</div>
+
+<script src="../js/result.js"></script>
+</body>
+</html>
