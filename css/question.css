@@ -19,7 +19,19 @@ body {
     justify-content: center;
     align-items: center;
 }
+#lang{
+    padding: 30px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    width: 300px;
 
+}
+#lang img{
+    width: 40px;
+    height: 40px;
+}
 /* Box */
 #quiz{
     padding: 30px;
@@ -27,8 +39,9 @@ body {
     border-radius: 10px;
     text-align: center;
     width: 300px;
+    display: none;
 }
-#answers button{
+#answers button ,.btn{
     padding: 10px;
     border-radius: 30px;
     background-color: transparent;
@@ -37,6 +50,6 @@ body {
     width: 300px;
 
 }
-#answers button:hover{
+#answers button:hover,.btn:hover{
     color: #FFD700;
 }
