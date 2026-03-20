@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: blue;
+}
+.login-container {
+    width: 500px;
+    background-color: white;
+    padding: 30px;
+    margin: 100px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+     background-color: transparent;
+}
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
