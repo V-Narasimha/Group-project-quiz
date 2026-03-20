@@ -25,3 +25,6 @@ function retryQuiz(){
 function viewAnswers(){
     window.location.href = "summary.html";
 }
+function viewAnswers(){
+    alert("Summary page not implemented");
+}
