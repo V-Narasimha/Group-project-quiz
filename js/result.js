@@ -2,7 +2,7 @@
 let score = localStorage.getItem("score") || 0;
 
 // Show score
-document.getElementById("score").textContent = score;
+document.getElementById("score").textContent = score + " / 10";
 
 // Message
 let msg = document.getElementById("message");
