@@ -6,7 +6,8 @@
 body{
     margin: 0;
     font-family: Arial;
-    color: white;
+        background: linear-gradient(270deg, #020024, #090979, #00d4ff);
+
 }
 
 .container{
@@ -46,31 +47,37 @@ h2{
     width: 600px;
     margin-top: 12px;
     box-shadow: whitesmoke;
-   font-size: x-large;
+   font-size: large;
     color: white;   
     border: solid #ccdff6 3px; 
     border-radius: 5px;
 
 }
+.para:hover{
+    color: gold;
+}
 .start{
     padding: 2px;
-    display:inline-block;
+    display:flex;
     border: none;
     margin-top: 10px;
     box-shadow: 10vh;
+    justify-content: center;
 }
 .btn{
     background-color: darkblue;
     padding: 10px;
-    width: 100%;
+    width: fit-content;
     border: solid white 1px;
     border-radius: 20px;
     color: white;
-    font-size: x-large;
+    
+    font-size: medium;
+    
     
 }
 .btn:hover{
-    background-color: lightblue;
+    background-color: #1111ff;
     box-shadow: 0ch;
 
 
