@@ -37,6 +37,7 @@ h2{
     text-align: center;
 }
 .para{
+    background: rgba(255,255,255,0.1);
     text-align: center;
     padding: 20px;
     height: 200px;
@@ -46,7 +47,6 @@ h2{
     margin-top: 12px;
     box-shadow: whitesmoke;
    font-size: x-large;
-    background-color: #08192D;
     color: white;   
     border: solid #ccdff6 3px; 
     border-radius: 5px;
@@ -60,16 +60,17 @@ h2{
     box-shadow: 10vh;
 }
 .btn{
-    background-color: #1E23BB;
+    background-color: darkblue;
     padding: 10px;
     width: 100%;
     border: solid white 1px;
+    border-radius: 20px;
     color: white;
     font-size: x-large;
     
 }
 .btn:hover{
-    background-color:#564AAD;
+    background-color: lightblue;
     box-shadow: 0ch;
 
 
