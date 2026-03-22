@@ -198,10 +198,21 @@ function qload() {
             localStorage.setItem("score", score); // save score
             window.location.href = "../pages/result.html"; // redirect to result
         }
+        progressBar()
     });
 
     answers.appendChild(btn);
 });
+}
+var progress=0
+function progressBar(){
+    progress=progress+10
+    var bar=document.getElementById("progress__bar")
+    bar.style.width=progress+"%"
+    bar.textContent=progress+"%"
+    if(progress==100){
+        bar.style.backgroundColor="#18eb18"
+    }
 }
 
 

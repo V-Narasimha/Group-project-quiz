@@ -11,6 +11,19 @@ body {
     background: linear-gradient(270deg, #020024, #090979, #00d4ff);
     z-index: -1;
 }
+#progress{
+    max-width: 500px;
+    border-radius: 20px;
+    border: solid black 2px;
+}
+#progress__bar{
+    max-width: 500px;
+    width: 0%;
+    background-color: #0e0ef7;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
 
 #quizbox{
     height: 100vh;
@@ -25,8 +38,18 @@ body {
     border-radius: 10px;
     text-align: center;
     display: block;
-    width: 300px;
-
+    width: 500px;
+     animation: fadeZoom 0.6s ease;
+}
+@keyframes fadeZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 #lang img{
     width: 40px;
@@ -38,8 +61,9 @@ body {
     background: rgba(255,255,255,0.1);
     border-radius: 10px;
     text-align: center;
-    width: 300px;
+    width: 500px;
     display: none;
+     animation: fadeZoom 0.6s ease;
 }
 #answers button ,.btn{
     padding: 10px;
@@ -52,4 +76,13 @@ body {
 }
 #answers button:hover,.btn:hover{
     color: #FFD700;
+}
+@media screen and (max-width:600px) {
+    #quiz,#lang{
+        width: 300px;
+        font-size: smaller;
+    }
+    #progress,#progressbar{
+        max-width: 300px
+}
 }
