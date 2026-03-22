@@ -21,15 +21,44 @@
                 <input type="password" placeholder="Enter your password" required>
             </div>
 
-            <button type="submit" onclick="gotosignup()">Sign Up</button>
+            <button type="submit">Sign Up</button>
         </form>
     </div>
 
 </body>
 </html>
-
 <script>
-    function gotosignup() {
+document.querySelector(".login-container form").addEventListener("submit", function(event) {
+    event.preventDefault(); // stop form submit
+
+    let email = document.querySelector("input[type='email']").value.trim();
+    let password = document.querySelector("input[type='password']").value.trim();
+
+    // Email pattern
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    // Validation checks
+    if (email === "") {
+        alert("Email is required");
+        return;
+    }
+
+    if (!email.match(emailPattern)) {
+        alert("Enter a valid email");
+        return;
+    }
+
+    if (password === "") {
+        alert("Password is required");
+        return;
+    }
+
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters");
+        return;
+    }
+
+    // If all valid → redirect
     window.location.href = "description.html";
-}
+});
 </script>
